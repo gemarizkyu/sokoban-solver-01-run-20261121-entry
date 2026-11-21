@@ -1,0 +1,3 @@
+TITLE: Push-optimal Sokoban solver
+
+DESCRIPTION: A push-optimal Sokoban solver for the $100 sokoban-solver-01-run-20261121 bounty. It splits each level into its rooms, solves every room with a breadth-first search over pushes (dead-square and frozen-2x2 deadlock pruning), and stitches the rooms together with walks. Practice set: 1,000,000 / 1,000,000 — every level solved in exactly its push-optimal count (13/16/29/47/60 pushes); the house baseline plain-astar scores 200,000. Deterministic, ~1.3 s for the whole set.
